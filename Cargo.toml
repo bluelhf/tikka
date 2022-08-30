@@ -9,6 +9,12 @@ edition = "2021"
 rocket = "0.5.0-rc.2"
 regex = "1.6.0"
 
+[dependencies.rocket_dyn_templates]
+version = "0.1.0-rc.2"
+features = [
+    "tera",
+]
+
 [dependencies.uuid]
 version = "1.1.2"
 features = [
