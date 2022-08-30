@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- I'm a programmer, not a front-end developer -->
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <header style="display: flex; flex-direction: column; align-items: center;">
+        <h1 style="margin-block-end: 0px;">Tikka</h1>
+        <p style="margin-block-start: 0px;">File uploading without frills.</p>
+    </header>
+    <div>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <input type="file" id="file" name="user_file">
+            <input type="submit">
+          </form>
+    </div>
+</body>
+</html>
