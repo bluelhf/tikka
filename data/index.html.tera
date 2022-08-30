@@ -12,11 +12,15 @@
         <h1 style="margin-block-end: 0px;">Tikka</h1>
         <p style="margin-block-start: 0px;">File uploading without frills.</p>
     </header>
-    <div>
-        <form action="/submit" method="post" enctype="multipart/form-data">
-            <input type="file" id="file" name="user_file">
-            <input type="submit">
-          </form>
-    </div>
+    {% if filename %}
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <h3>Great! Your file is available here: <a download="{{ filename }}" href="file/{{ filename }}">{{ filename }}</a></h3>
+        </div>
+    {% else %}
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <input type="file" id="file" name="user_file">
+        <input type="submit">
+      </form>
+    {% endif %}
 </body>
 </html>

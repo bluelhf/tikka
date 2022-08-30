@@ -1,2 +1,3 @@
 [default]
 limits = {file = "1 GiB", data-form = "1 GiB", form = "1 GiB"}
+template_dir = "data"
